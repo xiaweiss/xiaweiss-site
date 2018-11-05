@@ -1,0 +1,6 @@
+[submodule "themes/next"]
+	path = themes/next
+	url = git@github.com:xiaweiss/hexo-theme-next-xiaweiss.git
+[submodule "source"]
+	path = source
+	url = git@git.coding.net:xiaweiss/source.git
