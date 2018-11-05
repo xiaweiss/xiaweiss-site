@@ -3,19 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
-timezone:
+title: Xiawei
+subtitle: 走向未知的旅途
+description: 夏味的个人博客
+author: 夏味
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://xiaweiss.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: art/:title/ #dafault :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -27,6 +26,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+- README.md
+- CNAME
+- foo/*.html
+- foo/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -43,7 +46,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -51,8 +54,8 @@ highlight:
 index_generator:
   path: ''
   per_page: 10
-  order_by: -date
-  
+  order_by: -updated
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -73,9 +76,29 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+- type: git
+  repo: git@github.com:xiaweiss/xiaweiss.github.io.git
+# - type: git
+#   repo: xiawei@xiaweiss.com:/www/xiaweiss.git
+
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  model: koharu # 模型名称 默认值: z16
+  width: 150 # 宽度 默认值: 150
+  height: 300 # 高度 默认值: 300
+  scaling: 1 # 分辨率缩放倍率 默认值: 2
+  opacityDefault: 1 # 初始的透明度 默认值: 1
+  #opacityHover: 1 # 鼠标悬浮时的透明度 默认值: 1
+  mobileShow: true # 是否在移动设备上显示 默认值: true
+  mobileScaling: 0.5 # 移动设备缩放倍率 默认值: 0.5
+  position: right # 模型左右侧放置位置 默认值: right
+  horizontalOffset: 0 # 元素的水平偏移 默认值: 0
+  verticalOffset: -20 # 元素的底部偏移 默认值: -20
+  className: live2d # 元素的类名 默认值: live2d
+  id: live2dcanvas # 元素的id 默认值: live2dcanvas
