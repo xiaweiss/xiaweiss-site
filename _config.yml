@@ -81,10 +81,10 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
+#- type: git
+#  repo: git@github.com:xiaweiss/xiaweiss.github.io.git
 - type: git
-  repo: git@github.com:xiaweiss/xiaweiss.github.io.git
-# - type: git
-#   repo: xiawei@xiaweiss.com:/www/xiaweiss.git
+  repo: xiawei@39.106.12.137:/site.git
 
 # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d
