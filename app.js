@@ -15,11 +15,9 @@ const staticPath = './../../../site'
 // app.use(enforceHttps())
 
 app.use(koaStatic(
-  path.join( __dirname,  staticPath),
+  path.join(__dirname, staticPath),
   {maxage: 10 * 24 * 60 * 60 * 1000} // 10 day
 ))
-
-
 
 // SSL options
 const options = {
@@ -35,7 +33,6 @@ const options = {
 
 // 取消 pm2 开机启动
 // pm2 unstartup systemd
-
 
 // Start the server
 http.createServer(app.callback()).listen(80)

@@ -1,6 +1,6 @@
 {
   "name": "xiaweiss-site",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "hexo": {
     "version": "3.8.0"
@@ -9,7 +9,9 @@
     "init": "npm install && git submodule init && git submodule update",
     "start": "hexo clean && hexo s",
     "c": "hexo clean",
-    "d": "hexo clean && hexo d && hexo clean"
+    "s": "hexo clean && hexo g && hexo s",
+    "d": "hexo clean && hexo d && hexo clean",
+    "g": "hexo g"
   },
   "dependencies": {
     "hexo": "^3.7.0",
@@ -27,5 +29,9 @@
     "koa": "^2.6.2",
     "koa-sslify": "^2.1.2",
     "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "hexo-cli": "^1.1.0",
+    "standard": "^10.0.3"
   }
 }
