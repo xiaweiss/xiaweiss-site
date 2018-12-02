@@ -78,6 +78,14 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  order_by: -updated
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
