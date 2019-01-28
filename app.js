@@ -21,8 +21,8 @@ app.use(koaStatic(
 
 // SSL options
 const options = {
-  key: fs.readFileSync('./../xiaweiss.com.key'),
-  cert: fs.readFileSync('./../xiaweiss.com.crt')
+  key: fs.readFileSync('./../xiaweiss.key'),
+  cert: fs.readFileSync('./../xiaweiss.pem')
 }
 
 // 允许 node 监听小于 1024 的端口
