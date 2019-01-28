@@ -11,12 +11,12 @@ const app = new Koa()
 // 静态资源目录对于相对入口文件index.js的路径
 const staticPath = './../../../site'
 
-// Force HTTPS on all page
+// Force HTTPS on page
 // app.use(enforceHttps())
 
 app.use(koaStatic(
   path.join(__dirname, staticPath),
-  {maxage: 10 * 24 * 60 * 60 * 1000} // 10 day
+  { maxage: 10 * 24 * 60 * 60 * 1000 } // 10 day
 ))
 
 // SSL options

@@ -3,4 +3,4 @@
 	url = git@github.com:xiaweiss/hexo-theme-next-xiaweiss.git
 [submodule "source"]
 	path = source
-	url = git@git.coding.net:xiaweiss/source.git
+	url = git@github.com:xiaweiss/source.git

@@ -34,5 +34,8 @@
   "devDependencies": {
     "hexo-cli": "^1.1.0",
     "standard": "^10.0.3"
+  },
+  "standard": {
+    "globals": ["$"]
   }
 }
