@@ -7,11 +7,12 @@
   },
   "scripts": {
     "init": "npm install && git submodule init && git submodule update",
-    "start": "hexo clean && hexo s",
+    "start": "npm run removeHM && hexo clean && hexo s",
     "c": "hexo clean",
     "s": "hexo clean && hexo g && hexo s",
     "d": "hexo clean && hexo d && hexo clean",
-    "g": "hexo g"
+    "g": "hexo g",
+    "removeHM": "find source -name '*.md' | xargs sed -f removeHM.sed -i '.bak' && find source -name '*.bak' | xargs rm"
   },
   "dependencies": {
     "hexo": "^3.7.0",
